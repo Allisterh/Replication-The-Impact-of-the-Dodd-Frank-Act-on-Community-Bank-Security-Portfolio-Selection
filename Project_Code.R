@@ -1254,7 +1254,7 @@ plot14 <-
   
   
 
-  #####Making Data Panel Data Formally for R Regressions 
+  #####Making Data Panel Data Formally for R Tobit Maximum Liklihood Estimations
   Bank_Data_Merged_Final_Total_Panel <- pdata.frame(Bank_Data_Merged_Final_Total_Panel, index = c("IDRSSD_", "Quarter_Numeric"))
   
   ##Adding NA values to the 3 banks that don't have consequetive quarters 
@@ -1284,7 +1284,7 @@ plot14 <-
   
   nrow(Bank_Data_Merged_Final_Total_Panel)
   ########################################
-  ###Tobti Random Effects Models, quote package creators 
+  ###Tobti Random Effects Models, quote package creators, using CensReg for MLE Tobit Estimation
   
   #####Correlated Random Effects Model with States Test
   State_Vector <- c(rep(0, 55))
